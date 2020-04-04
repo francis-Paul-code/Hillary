@@ -1,0 +1,118 @@
+body{
+    background:rgb(2, 2, 12);
+    color:white;
+    margin:0px;
+    padding:0px;
+}
+.container{
+    width:800px;
+    height:300px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background:white;
+    box-shadow:0px 20px 15px rgb(204, 165, 31);
+    border:2px solid white;
+    display:flex;
+}
+.image-box{
+    width:55%;
+    height:100%;
+     background:black;
+    margin:0;
+    padding:0;
+    text-align:center;
+    border-left:80px solid white;
+    border-bottom:300px solid transparent;
+    box-sizing: border-box;
+}
+.content-box{
+    width:45%;
+    height:100%;
+    background:white;
+    margin:0;
+    text-align:center;
+    padding:0;
+    box-sizing:border-box;
+    color:black;
+   
+}
+.image-box img{
+    width:200px;
+    height: 200px;
+    border-radius:100%;
+    border:3px white solid;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.main-div{
+    display:flex;
+    margin-left:80px;
+    margin-top:100px;
+}
+.main-div h1{
+    font-size:30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-right:10px;
+    font-weight:700;
+}
+.sec-div1{
+    width:70px;
+    height:25px;
+    color:white;
+    overflow:hidden;
+    background:black;
+    border-radius:10px;
+    margin-top:25px;
+}
+.sec-div2{
+    width:75px;
+    height:25px;
+    color:black;
+    overflow:hidden;
+    background:white;
+    border-radius:10px;
+    margin-top:25px;
+}
+.line{
+    margin-bottom:5px;
+    height:25;
+    width:65px;
+    padding-top:3px;
+    border-radius:10px;
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding-left:3px;
+    padding-right: 5px;
+    line-height: 20px;
+}
+.sec-div2 line{
+    font-weight:700;
+}
+.line:first-child{
+    animation:slide 8s infinite normal;
+}
+ @keyframes slide{
+   0%{
+       margin-top:0px;
+   }
+   44%{
+       margin-top:-30px;
+   }
+   66%{
+       margin-top:-55px;
+   }
+   83%{
+       margin-top:-85px;
+   }
+   100%{
+       margin-top:0px;
+   }
+ }
+ 
